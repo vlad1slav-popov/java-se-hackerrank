@@ -1,5 +1,7 @@
 package com.company.testse;
 
+import java.math.BigDecimal;
+
 public class TestSwap {
 
     public static void main(String[] args) {
@@ -15,6 +17,13 @@ public class TestSwap {
         changeStr(str);
 
         System.out.println(str);
+
+        BigDecimal bigDecimal = new BigDecimal("1.00");
+        BigDecimal bigDecimal1 = bigDecimal.multiply(new BigDecimal("100"));
+        System.out.println(bigDecimal1.intValue());
+
+        String s = String.valueOf(bigDecimal.multiply(BigDecimal.valueOf(100)).intValue());
+        System.out.println(s);
 
     }
 
